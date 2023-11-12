@@ -1,0 +1,213 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barraCarrito {
+    position: fixed;
+    top: 0; /* Cambiado de bottom a top */
+    right: 15px; /* Cambiado de left a right */
+    width: auto; /* Cambiado de 100% a auto para ajustarse al contenido */
+    height: 25px;
+    display: inline-block; /* Cambiado de block a inline-block */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    z-index: 1000; /* Mantiene la barra por encima de otros elementos */
+    list-style-type: none; /* Remueve los estilos de lista */
+    
+    
+  
+}
+
+.barraCarrito a {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    
+}
+
+
+
+
+/* Estilos para el Navbar */
+.navbar {
+    background-color: #16c6cc; /* Color de fondo */
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); /* Sombra de la navbar */
+    margin-top: 5px; /* Margen superior */
+    margin-bottom: 5px; /* Margen inferior */
+    /*overflow: hidden; /* Oculta el contenido desbordado */
+    /*position: fixed; /* Fija la navbar en la parte superior */
+    top: 0; /* Posición superior */
+    width: 100%; /* Ancho completo */
+    height:60px; /* Altura *
+    /*z-index: 1000; /* Asegura que la navbar se mantenga en la parte superior */
+}
+
+.navbar nav ul {
+    list-style-type: none; /* Remueve los estilos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Distribución horizontal de los elementos */
+    justify-content: left; /* Centrado horizontal */
+}
+
+.navbar nav ul li {
+    display: inline; /* Coloca los elementos de la lista en línea */
+}
+
+.navbar nav ul li a {
+    display: inline-block; /* Bloques en línea para los enlaces */
+    color: white; /* Color del texto */
+    font-family: 'Open Sans', sans-serif; /* Tipo de fuente */
+    font-size: large; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto */
+    padding: 14px 16px; /* Espaciado alrededor del texto */
+    text-decoration: none; /* Remueve el subrayado del enlace */
+}
+
+.navbar nav ul li a:hover {
+   
+    color: black; /* Color del texto al pasar el ratón */
+}
+
+.logo img {
+    height: 35px; /* Altura */; /* Ajusta esto según el tamaño de tu logo */
+    width: auto; /* Ancho automático */
+}
+
+
+
+/* Estilos para el Carrusel */
+
+            .slide {
+                position: relative;
+                box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+                margin-top: 26px;
+            }
+
+            .slide-inner {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: calc( 450px + 3em);
+            }
+
+            .slide-open:checked + .slide-item {
+                position: static;
+                opacity: 100;
+            }
+
+            .slide-item {
+                position: absolute;
+                opacity: 0;
+                -webkit-transition: opacity 0.6s ease-out;
+                transition: opacity 0.6s ease-out;
+            }
+
+            .slide-item img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+
+            .slide-control {
+                background: rgba(0, 0, 0, 0.28);
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+                font-size: 40px;
+                height: 40px;
+                line-height: 35px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                cursor: pointer;
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                text-align: center;
+                width: 40px;
+                z-index: 10;
+            }
+
+            .slide-control.prev {
+                left: 2%;
+            }
+
+            .slide-control.next {
+                right: 2%;
+            }
+
+            .slide-control:hover {
+                background: rgba(0, 0, 0, 0.8);
+                color: #aaaaaa;
+            }
+
+            #slide-1:checked ~ .control-1,
+            #slide-2:checked ~ .control-2,
+            #slide-3:checked ~ .control-3 
+            {
+                display: block;
+            }
+
+            .slide-indicador {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+
+            .slide-indicador li {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            .slide-circulo {
+                color: #16c6cc;
+                cursor: pointer;
+                display: block;
+                font-size: 35px;
+            }
+
+            .slide-circulo:hover {
+                color: #16c6cc;
+            }
+
+            #slide-1:checked ~ .control-1 ~ .slide-indicador 
+                 li:nth-child(1) .slide-circulo,
+            #slide-2:checked ~ .control-2 ~ .slide-indicador 
+                  li:nth-child(2) .slide-circulo,
+            #slide-3:checked ~ .control-3 ~ .slide-indicador 
+                  li:nth-child(3) .slide-circulo
+                   {
+                color: #16c6cc;
+            }
+
+            #titulo {
+                width: 100%;
+                position: absolute;
+                padding: 0px;
+                margin: 0px auto;
+                text-align: center;
+                font-size: 27px;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'Open Sans', sans-serif;
+                z-index: 9999;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                     -1px 0px 2px rgba(255, 255, 255, 0);
+            }
+        
+.container {
+    width: 100%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
