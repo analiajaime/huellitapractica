@@ -4,27 +4,6 @@ body {
     box-sizing: border-box;
 }
 
-.barraCarrito {
-    position: fixed;
-    top: 0; /* Cambiado de bottom a top */
-    right: 15px; /* Cambiado de left a right */
-    width: auto; /* Cambiado de 100% a auto para ajustarse al contenido */
-    height: 25px;
-    display: inline-block; /* Cambiado de block a inline-block */
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    z-index: 1000; /* Mantiene la barra por encima de otros elementos */
-    list-style-type: none; /* Remueve los estilos de lista */
-    
-    
-  
-}
-
-.barraCarrito a {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    
-}
 
 
 
@@ -33,14 +12,14 @@ body {
 .navbar {
     background-color: #16c6cc; /* Color de fondo */
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); /* Sombra de la navbar */
-    margin-top: 5px; /* Margen superior */
+    margin-top: 0%; /* Margen superior */
     margin-bottom: 5px; /* Margen inferior */
-    /*overflow: hidden; /* Oculta el contenido desbordado */
-    /*position: fixed; /* Fija la navbar en la parte superior */
+    position: fixed; /* Fija la navbar en la parte superior */
     top: 0; /* Posición superior */
     width: 100%; /* Ancho completo */
-    height:60px; /* Altura *
-    /*z-index: 1000; /* Asegura que la navbar se mantenga en la parte superior */
+    height:60px; /* Altura */
+    z-index: 1;  /* Asegura que la navbar se mantenga en la parte superior */
+   
 }
 
 .navbar nav ul {
@@ -88,9 +67,9 @@ body {
             .slide-inner {
                 position: relative;
                 overflow: hidden;
-                width: 100%;
-                height: calc( 450px + 3em);
-            }
+                width:auto;
+                height: auto;
+                   }
 
             .slide-open:checked + .slide-item {
                 position: static;
@@ -188,19 +167,7 @@ body {
                 color: #16c6cc;
             }
 
-            #titulo {
-                width: 100%;
-                position: absolute;
-                padding: 0px;
-                margin: 0px auto;
-                text-align: center;
-                font-size: 27px;
-                color: rgba(255, 255, 255, 1);
-                font-family: 'Open Sans', sans-serif;
-                z-index: 9999;
-                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-                     -1px 0px 2px rgba(255, 255, 255, 0);
-            }
+           
         
 .container {
     width: 100%;
