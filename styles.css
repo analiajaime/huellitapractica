@@ -182,7 +182,7 @@ body {
 /* Estilos del Contenedor de Tarjetas */
 .cards-container {
     display: flex; /* Habilita Flexbox */
-    justify-content: space-around; /* Distribuye las tarjetas uniformemente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten al ancho del contenedor */
     padding: 20px; /* Agrega algo de espacio alrededor */
 }
 
